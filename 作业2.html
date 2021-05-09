@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        height: 60px;
+        width: 100%;
+        background-color: rgb(44, 44, 44);
+    }
+    header .middle{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 960px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    header .middle ul{
+       align-self: start;
+        list-style-type: none;
+    }
+    header .middle ul li{
+        display: inline-block;
+    }
+    header li a{
+        font-size: 10px;
+        color: white;
+    }
+    header .middle .logo{
+        font-size: 20px;
+        color: white;
+
+    }
+    section.slideShow{
+        margin:0 auto;
+        width: 100%;
+        height: 240px;
+        background-color: rgb(68, 180, 3);
+    }
+    section .middle{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 960px;
+        height: 240px;
+        margin: 0 auto;
+    }
+    section .middle a{
+        position: relative;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid black;
+        box-sizing: border-box;
+        width: 25px;
+        height: 30px;
+        margin-left: 5px;
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.6;
+    }
+    section .middle a span{
+        position: absolute;
+        bottom: 5px;
+        left: 7px;
+        font-size: 12px;
+    }
+    section .middle a:focus{
+        opacity: 1;
+        height: 40px;
+    }
+    div.line{
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid rgb(211, 211, 211);
+    }
+    div.line .box{
+        position: relative;
+        bottom: -21px;
+        width: 960px;
+        margin: 0 auto;
+        height: 80px;
+    }
+    div.line ul{
+        list-style: none;
+    }
+    div.line ul li a{
+        color: black;
+        text-decoration: none;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-align: center;
+        display: block;
+        height: 40px;
+        width: 100px;
+        border-radius: 15px 15px 0px 0px;
+        border: 1px solid rgb(211, 211, 211);
+        background-color: rgb(230, 230, 230);
+        float: left;
+    }
+    div.line ul li a:focus{
+        background-color: rgb(255, 255, 255);
+       
+    }
+    main{
+        display: flex;
+        height: 670px;
+        width: 960px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    main div{
+        text-align: center;
+        border: 1px solid black;
+        padding: 80px;
+        height: 40px;
+        line-height: 40px;
+    }
+    main div.one{
+        margin-top: 10px;
+        flex: 1 1 100px;
+        margin-right: 10px;
+    }
+    main div.two{
+        flex: 1 1 50px;
+        margin-right: 10px;
+    }
+    main div.three{
+        flex: 1 1 100px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.7;
+    }
+    footer div{
+       color: white;
+       text-align: center;
+       line-height: 50px;
+    }
+</style>
+<body>
+    <header>
+        <div class = middle>
+            <div class="logo">Logo</div>
+            <ul><li><a href="#">Github</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="slideShow">
+        <div class="middle">
+            <a href="#"><span>1</span></a>
+            <a href="#"><span>2</span></a>
+            <a href="#"><span>3</span></a>
+            <a href="#"><span>4</span></a>
+        </div>
+    </section>
+
+    <div class="line">
+        <div class="box">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <main>
+        <div class="one">1</div>
+        <div class="one">2</div>
+        <div class="one">3</div>
+        <div class="two">4</div>
+        <div class="two">5</div>
+        <div class="two">6</div>
+        <div class="two">7</div>
+        <div class="three">8</div>
+        <div class="three">9</div>
+        <div class="three"> 10</div>
+    </main>
+    <footer>
+        <div>
+            2018
+        </div>
+    </footer>
+</body>
+</html>
